@@ -17,7 +17,6 @@ function ProductAdd(props) {
       name,
       price,
       Specialoffer,
-      detail,
       category,
       imgurl: 'http://localhost:3001/img/' + imgurl,
     }
@@ -90,19 +89,7 @@ function ProductAdd(props) {
             }}
           />
         </div>
-        <div class="form-group">
-          <label for="exampleFormControlInput4">產品描述</label>
-          <input
-            type="text"
-            class="form-control"
-            id="exampleFormControlInput4"
-            placeholder="產品描述"
-            value={detail}
-            onChange={(e) => {
-              setDetial(e.target.value)
-            }}
-          />
-        </div>
+
         <form name="photo">
           <div class="form-group">
             <label for="exampleFormControlInput5">圖片</label>

@@ -71,7 +71,7 @@ router.post("/upload-photo", upload.single("imgurl"), (req, res) => {
     });
   }
 });
-router.use("/ProductData", jsonParser, async (req, res) => {
+router.post("/ProductData", jsonParser, async (req, res) => {
   let sql = "SELECT * FROM product ";
   if (req.body.inputSearch) {
     sql =
@@ -96,8 +96,7 @@ router.post("/edit/:sid", jsonParser, async (req, res) => {
   await db.query(sql, [data, parseInt(req.params.sid)]);
   console.log(data);
 });
-router.post(
-  "/addProduct",
+router.post("/addProduct",
   jsonParser,
   upload.single("imgurl"),
   async (req, res) => {

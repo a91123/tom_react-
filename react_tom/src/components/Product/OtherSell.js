@@ -4,7 +4,7 @@ function OtherSell() {
       <h2 class="tom-about-product">相關產品</h2>
       <div class="tom-sell">
         <div class="tom-sell-product">
-          <img src="http://localhost:3001/img/bot1.jpg" alt="" />
+          <img src="http://localhost:3001/img/pr1.jpg" alt="" />
           <p class="tom-sell-title">澄澈眼部雙精華</p>
           <svg
             version="1.1"
@@ -65,7 +65,7 @@ function OtherSell() {
           </div>
         </div>
         <div class="tom-sell-product">
-          <img src="http://localhost:3001/img/bot5.jpg" alt="" />
+          <img src="http://localhost:3001/img/pr3.webp" alt="" />
           <p class="tom-sell-title">活萃修護精華露 </p>
           <svg
             version="1.1"
@@ -123,7 +123,7 @@ function OtherSell() {
           </div>
         </div>
         <div class="tom-sell-product">
-          <img src="http://localhost:3001/img/bot6.webp" alt="" />
+          <img src="http://localhost:3001/img/pr4.webp" alt="" />
           <p class="tom-sell-title">【選擇．少些毛躁】修護承諾柔順組</p>
           <svg
             version="1.1"
@@ -185,7 +185,7 @@ function OtherSell() {
           </div>
         </div>
         <div class="tom-sell-product">
-          <img src="http://localhost:3001/img/bot7.jpg" alt="" />
+          <img src="http://localhost:3001/img/pr7.jpg" alt="" />
           <p class="tom-sell-title">【選擇．揮別乾燥】秋冬保濕修護組</p>
           <svg
             version="1.1"

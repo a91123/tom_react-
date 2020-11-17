@@ -44,6 +44,7 @@ function ShopList(props) {
         getData={getData}
       />
       <Nav setCategory={setCategory} />
+
       <ProductRow data={mydata} category={category} inputSearch={inputSearch} />
     </>
   )

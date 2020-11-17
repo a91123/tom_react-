@@ -14,7 +14,7 @@ function ProductData(props) {
   const [inputSearch, setInputSearch] = useState('')
   const [myData, setMydata] = useState([])
   const [wantDel, setwantDel] = useState(false)
-
+  const [mapSid, setMapSid] = useState('')
   const getData = async () => {
     const res = await fetch('http://localhost:3000/product/ProductData', {
       method: 'POST',
@@ -145,12 +145,14 @@ function ProductData(props) {
                     delData={delData}
                     v={v}
                     myData={myData}
+                    mapSid={mapSid}
+                    setDelUpdate={setDelUpdate}
                   />
                   <Button
                     variant="danger block"
                     onClick={() => {
                       setModalShow(true)
-                      delData(v.sid)
+                      setMapSid(v.sid)
                     }}
                   >
                     <MdDelete /> 刪除

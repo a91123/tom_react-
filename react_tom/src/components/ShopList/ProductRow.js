@@ -18,6 +18,7 @@ function ProductRow(props) {
 
   return (
     <>
+      {' '}
       <div class="container shop_list-product-first-row ">
         <div class="row">{display.length !== 0 ? display : '查無資料'}</div>
       </div>

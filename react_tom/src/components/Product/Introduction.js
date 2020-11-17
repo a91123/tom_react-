@@ -15,7 +15,7 @@ function Introduction() {
           <div class="tom-title-top" id="title-top">
             <h2 class="tom-product-title">
               {' '}
-              竹萃洗髮精 <span class="ml">250ml</span>
+              奇蹟辣木油 <span class="ml">250ml</span>
             </h2>
             <div class="tom-star-top">
               <div>250 reviews</div>
@@ -38,7 +38,7 @@ function Introduction() {
               <img src="http://localhost:3001/icon/know-more-1.png" alt="" />
               <img src="http://localhost:3001/icon/know-more-3.png" alt="" />
             </div>
-            <h3 class="tom-price">NT 500</h3>
+            <h3 class="tom-price">NT 820</h3>
             <div class="tom-count">
               <div className="tom-sel">
                 <img

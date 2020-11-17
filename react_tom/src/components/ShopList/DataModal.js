@@ -1,7 +1,17 @@
 import React, { useState, useEffect } from 'react'
 import { Button, Modal } from 'react-bootstrap'
 function DataModal(props) {
-  const { modalShow, setModalShow, setwantDel, delData, v, myData } = props
+  const {
+    modalShow,
+    setModalShow,
+    setwantDel,
+    delData,
+    v,
+    myData,
+    setDelUpdate,
+    delUpdate,
+    mapSid,
+  } = props
   return (
     <>
       <Modal
@@ -27,7 +37,8 @@ function DataModal(props) {
           </Button>
           <Button
             onClick={() => {
-              console.log(v)
+              delData(mapSid)
+              console.log(mapSid)
               setModalShow(false)
             }}
           >

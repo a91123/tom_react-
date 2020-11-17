@@ -29,7 +29,7 @@ function ProductEdit(props) {
     )
     const data = await res.json()
     setMydata(data)
-
+    console.log(data)
     //  const [name, setName] = useState('')
     //  const [price, setPrice] = useState('')
     //  const [Specialoffer, setSpecialoffer] = useState('')
@@ -85,7 +85,6 @@ function ProductEdit(props) {
       name,
       price,
       Specialoffer,
-      detail,
       imgurl: 'http://localhost:3001/img/' + editImgurl,
       category,
     }
@@ -147,19 +146,7 @@ function ProductEdit(props) {
             }}
           />
         </div>
-        <div class="form-group">
-          <label for="exampleFormControlInput4">產品描述</label>
-          <input
-            type="text"
-            class="form-control"
-            id="exampleFormControlInput4"
-            placeholder="name@example.com"
-            value={detail}
-            onChange={(e) => {
-              setDetial(e.target.value)
-            }}
-          />
-        </div>
+
         <div class="form-group">
           <label for="exampleFormControlInput5">圖片路徑 </label>
           <input
