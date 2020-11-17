@@ -64,7 +64,14 @@ function Introduction() {
               <div
                 class="tom-add-shop"
                 onClick={() => {
-                  localStorage.setItem('cart', JSON.stringify(data))
+                  if (localStorage.cart == null) {
+                    localStorage.setItem('cart', JSON.stringify([data]))
+                  } else {
+                    const newCart = JSON.parse(localStorage.getItem('cart'))
+                    console.log(newCart)
+                    const addItem = [data, ...newCart]
+                    localStorage.setItem('cart', JSON.stringify(addItem))
+                  }
                 }}
               >
                 加入購物車
